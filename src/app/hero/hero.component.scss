@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("/public/Profilfoto") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-rows: auto auto auto; /* Drei Layer */
+  gap: 20px; /* Abstand zwischen den Layern */
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Raster mit 12 Spalten */
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* Innenabstand für Text */
+  width: 80%; /* Breite relativ zur Elterncontainer-Breite */
+  max-width: 600px; /* Maximale Breite für größere Bildschirme */
+  height: auto; /* Automatische Höhe basierend auf Inhalt */
+  min-height: 20vh; /* Mindesthöhe relativ zur Viewport-Höhe */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparenter Hintergrund */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Rahmen mit Transparenz */
+  border-radius: 15px; /* Abgerundete Ecken */
+  text-align: center; /* Zentrierter Text */
+}
+
+.intro h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Dynamische Schriftgröße */
+}
+
+.intro h2 {
+  font-size: clamp(1rem, 3vw, 1.8rem); /* Dynamische Schriftgröße */
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Raster mit flexiblen Spalten */
+}
+
+.profile-picture {
+  grid-column: span 4; /* Überspannt vier Spalten */
+}
+
+.about {
+  grid-column: span 4; /* Überspannt vier Spalten */
+}
+
+.github-analytics {
+  grid-column: span 8; /* Überspannt acht Spalten */
+}
+
+.techstack {
+  grid-column: span 8; /* Überspannt acht Spalten */
+}
+
+.linkedin,
+.github,
+.certificates {
+  grid-column: span 4; /* Jeweils vier Spalten breit */
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.motivation {
+  grid-column: span 12; /* Überspannt alle Spalten */
+}
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    gap: 10px;
+    padding: 10px;
+    grid-template-rows: auto auto auto; /* Drei Layer bleiben erhalten */
+  }
+
+  .header,
+  .main-content,
+  .footer {
+    grid-template-columns: repeat(
+      6,
+      1fr
+    ); /* Weniger Spalten für kleinere Geräte */
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10 px;
+  }
+}
