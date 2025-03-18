@@ -1,0 +1,30 @@
+.navWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+
+  .navBarContentbox {
+    display: flex;
+    gap: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 33, 44, 0.4);
+    width: 450px;
+    height: 80px;
+    border-radius: 20px;
+  }
+
+  .navLinksBorder {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #59ff00;
+    border-radius: 20px;
+    opacity: 100%;
+    background-color: #20212c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
