@@ -66,6 +66,17 @@
 }
 .div8 {
   grid-area: 5 / 2 / 7 / 6;
+
+  .motivationSpeach,
+  .technologieRequest,
+  .location {
+    padding-block: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
 }
 .div9 {
   grid-area: 5 / 6 / 7 / 7;
