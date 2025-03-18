@@ -17,6 +17,12 @@
 
 .div1 {
   grid-area: 1 / 1 / 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
 }
 .div2 {
   grid-area: 1 / 3 / 3 / 6;
@@ -29,19 +35,21 @@
   flex-direction: column;
   text-align: center;
   padding-block: 20px;
-  font-size: 36px;
+  font-size: 28px;
 }
 .div4 {
   grid-area: 3 / 1 / 7 / 2;
+  display: flex;
+  justify-content: center;
 }
 .div5 {
   grid-area: 3 / 2 / 5 / 3;
-  padding-block: 20px;
-  padding-inline: 10px;
+  padding-inline: 14px;
   display: flex;
   text-align: left;
   flex-direction: column;
-  gap: 40px;
+  justify-content: center;
+  gap: 30px;
   font-size: 14px;
 }
 .div6 {
@@ -49,10 +57,29 @@
 }
 .div7 {
   grid-area: 3 / 6 / 5 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 28px;
+  gap: 40px;
 }
 .div8 {
   grid-area: 5 / 2 / 7 / 6;
 }
 .div9 {
   grid-area: 5 / 6 / 7 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 28px;
+  gap: 40px;
+  padding-inline: 20px;
+
+  img {
+    width: 98px;
+    height: 93px;
+  }
 }
