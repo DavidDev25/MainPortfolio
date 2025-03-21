@@ -1,0 +1,20 @@
+.createFrame {
+  border: 1px solid #59ff00;
+  background-color: rgba(32, 33, 44, 0.4);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.projectsWrapper {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 100px;
+  .projects {
+    width: 30%;
+    h1 {
+      color: white;
+      font-size: 40px;
+    }
+  }
+}
